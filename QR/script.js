@@ -1,0 +1,22 @@
+
+
+let img = document.createElement("img");
+let qrr = document.querySelector(".qr-code");
+
+ qrr.appendChild(img);
+  function generate(){
+    let input = document.getElementById("input");
+    if (input.value) {
+        input.style.borderColor = "#c7c7c7";
+        img.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${input.value}`;
+    } 
+    else {
+        input.style.borderColor = "red";
+        return false;
+
+
+    }
+     input.value= " ";
+    }
+  
+  
