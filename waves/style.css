@@ -1,0 +1,53 @@
+  .final{
+    margin:0;
+    padding:0;
+    height: 40vh;
+    box-sizing: border-box;
+    
+  
+  }
+  body {
+    border: 2px solid red;
+  }
+
+  .last {
+    height: 30%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid blue;
+  }
+
+  section {
+    top: 0;
+    position: relative;
+    height:20vh;
+    width: 100%;
+    
+    background-color: black;
+    border: 2px solid yellow;
+  }
+  
+
+  .curve {
+    position: absolute;
+    top:10vh;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: black url('./wave-top.png');
+    
+    background-size: 2000px 80px;
+    animation: ani_wave 5s linear infinite;
+  }
+
+  @keyframes ani_wave {
+    0% {
+        background-position-x: 2000px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+  }
